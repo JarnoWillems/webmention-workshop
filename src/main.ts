@@ -42,7 +42,7 @@ document.querySelector<HTMLButtonElement>('#button')!.addEventListener('click', 
         } else {
             console.log('Webmention mislukt:', webmentionResponse.status, webmentionResponse.data);
         }
-    } catch (error) {
+    } catch (error: any) {
         console.error('Fout bij het verzenden van Webmention:', error.response?.data || error.message);
     }
 });
