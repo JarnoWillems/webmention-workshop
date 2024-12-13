@@ -37,7 +37,7 @@ document.querySelector<HTMLButtonElement>('#button')!.addEventListener('click', 
             });
 
         // Check the response status
-        if (webmentionResponse.status === 202) {
+        if (webmentionResponse.status === 201) {
             console.log('Webmention verzonden:', webmentionResponse.data);
         } else {
             console.log('Webmention mislukt:', webmentionResponse.status, webmentionResponse.data);
